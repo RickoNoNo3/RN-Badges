@@ -13,5 +13,5 @@
 import Badges from 'react-native-badges';
 
 // TODO: What to do with the module?
-Badges;
+Badges.setNotificationBadge(19);
 ```
