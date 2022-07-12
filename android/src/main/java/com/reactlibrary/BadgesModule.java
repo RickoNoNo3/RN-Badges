@@ -1,9 +1,11 @@
 package com.reactlibrary;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.support.v7.app.NotificationCompat;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
 
 public class BadgesModule extends ReactContextBaseJavaModule {
 
@@ -21,10 +23,10 @@ public class BadgesModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void setNotificationBadge(int count) {
-        // TODO: Implement some actually useful functionality
-        Notification notification = new NotificationCompat.Builder(MainActivity.this, CHANNEL_ID)        
-            .setSmallIcon(R.drawable.ic_notify_status)
-            .setNumber(count)
-            .build();
+        Notification notification = new NotificationCompat.Builder(reactContext)
+                .setSmallIcon(R.drawable.ic_notification)
+                .setNumber(count)
+                .setPriority(NotificationCompat.PRIORITY_MIN)
+                .build();
     }
 }
