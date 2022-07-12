@@ -1,7 +1,7 @@
 {
   "name": "rn-badges",
   "title": "React Native Badges",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native Badges",
   "main": "index.js",
   "files": [
@@ -17,11 +17,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:rickonono3/rn-badges"
+    "url": "git+https://github.com/rickonono3/rn-badges.git",
+    "baseUrl": "https://github.com/rickonono3/rn-badges"
   },
   "keywords": [
     "react-native"
   ],
+  "author": {
+    "name": "RickoNoNo3",
+    "email": "rickonono3@rickonono3.top"
+  },
   "license": "MIT",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
