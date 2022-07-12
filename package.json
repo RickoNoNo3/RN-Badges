@@ -1,13 +1,14 @@
 {
   "name": "rn-badges",
   "title": "React Native Badges",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native Badges",
   "main": "index.js",
   "files": [
     "README.md",
     "android",
     "index.js",
+    "index.d.ts",
     "ios",
     "react-native-badges.podspec"
   ],
