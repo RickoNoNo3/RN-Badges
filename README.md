@@ -1,17 +1,25 @@
-# react-native-badges
+# rn-badges
+
+> From [theromie/RN-Badges](https://github.com/theromie/RN-Badges)
 
 ## Getting started
 
-`$ npm install react-native-badges --save`
+```sh
+npm install rn-badges --save
+```
 
-### Mostly automatic installation
+For old React Native versions which don't support auto-linking:
 
-`$ react-native link react-native-badges`
+```sh
+react-native link react-native-badges
+```
 
 ## Usage
 ```javascript
-import Badges from 'react-native-badges';
+import Badges from 'rn-badges';
 
-// TODO: What to do with the module?
+// show
 Badges.setNotificationBadge(19);
+// hide
+Badges.setNotificationBadge(0);
 ```
